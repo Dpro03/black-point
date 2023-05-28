@@ -45,12 +45,12 @@ const Main = () => {
 
       <div className="container flex flex-col items-center md:flex-row">
         <img
-          className="mx-auto mb-10 md:flex flex-col md:flex-row"
+          className="mx-auto mb-2 md:flex flex-col md:flex-row"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSBV4_rqdSOp8nVPxC-XsU8MqaMJth5Pbi5w&usqp=CAU"
           alt="sunset-beach"
         />
         <img
-          className="mx-auto flex mb-10 md:flex flex-col items-center md:flex-row"
+          className="mx-auto flex mb-2 md:flex flex-col items-center md:flex-row"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxTgXFe3sILxoAr5hf1ZRyXFs16UhtDDp1fQ&usqp=CAU"
           alt="sunset-beach"
         />

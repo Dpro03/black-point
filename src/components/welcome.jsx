@@ -76,28 +76,28 @@ const Welcome = () => {
             <br />
             and use the above menu buttons to browse
             <br />
-            our website!
+            our website! 
           </h1>
           <br />
           <br />
           <br />
         </div>
-        <div className="flex justify-center p-4">
-          <div className="flex w-full flex-col items-center justify-center pb-4 md:flex-row">
+        <div className="flex justify-center px-4">
+          <div className="mx-auto flex w-full max-w-5xl items-center justify-center pb-20 md:flex-row">
             <img
               className="mx-auto mb-4 mt-4 h-auto w-1/4 sm:w-1/2 lg:pr-4"
-              src="https://www.blackpointmarket.com/x/cdn/?https://storage.googleapis.com/production-homestead-v1-0-5/365/255365/boc7Ij2Y/6d13bd3400bb4b44bae308879231479d"
-              alt="Hello"
+              src="./src/assets/blackpoint3.jpeg"
+              alt="pic3"
             />
             <img
               className="mx-auto mb-4 mt-4 h-auto w-1/4 sm:w-1/2 lg:pr-4"
-              src="https://www.blackpointmarket.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-31632971/images/5cc8b0fd30148ObPppB5/Richies-Italian-Ice_d400.jpg"
-              alt="Hello"
+              src="./src/assets/blackpoint10.jpeg"
+              alt="pic10"
             />
             <img
-              className="mx-auto mb-4 mt-4 h-auto w-1/4 sm:w-1/2"
-              src="https://www.blackpointmarket.com/x/cdn/?https://storage.googleapis.com/production-homestead-v1-0-5/365/255365/boc7Ij2Y/2fd521da6c114bda80ed05cb08c54a72"
-              alt="Hello"
+              className="mx-auto mb-4 mt-4 h-auto w-1/4 sm:w-1/2 lg:pr-4"
+              src="./src/assets/blackpoint11.jpeg"
+              alt="pic11"
             />
           </div>
         </div>

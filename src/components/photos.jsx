@@ -11,11 +11,11 @@ const Photos = () => {
       className="flex min-h-screen w-full flex-col bg-gradient-to-r from-red-600 to-amber-500 text-indigo-800"
     >
       <div className="container mx-auto flex-grow items-center">
-        <h2 className="mb-4 text-center text-2xl font-bold tracking-widest text-slate-800">
+        <h1 className="mb-4 text-center text-4xl font-bold tracking-widest text-slate-800">
           🌺Photos🌺
-        </h2>
+        </h1>
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-24">
+          <div className="mb-24 grid grid-cols-1 gap-6 p-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <img
               className="h-70 w-70 rounded-xl"
               src="./src/assets/blackpoint1.jpeg"
@@ -80,6 +80,11 @@ const Photos = () => {
               className="h-70 w-70 rounded-xl"
               src="./src/assets/blackpoint13.jpeg"
               alt="Photo 13"
+            />
+            <img
+              className="h-70 w-70 rounded-xl"
+              src="./src/assets/blackpoint14.jpeg"
+              alt="Photo 14"
             />
           </div>
         </div>

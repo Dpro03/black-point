@@ -49,7 +49,7 @@ const Navbar = () => {
             <ul className="inline-flex">
               <li>
                 <a
-                  className="flex items-center px-4 py-2 font-satisfy text-lg text-slate-100 hover:text-pink-600 md:text-xl lg:text-2xl"
+                  className="flex items-center px-4 py-2 font-satisfy text-md text-slate-100 hover:text-pink-600 md:text-lg lg:text-2xl"
                   href="/main"
                 >
                   Home

@@ -12,10 +12,7 @@ const Main = () => {
     >
       <br />
       <br />
-      <h1
-        className="text-center font-satisfy text-xl font-bold tracking-widest text-black underline decoration-slate-900 
-      underline-offset-4 md:text-2xl lg:text-6xl"
-      >
+      <h1 className="text-center font-satisfy text-xl font-bold tracking-widest text-black underline decoration-slate-900 underline-offset-4 md:text-2xl lg:text-6xl">
         Black Point Market
       </h1>
       <br />
@@ -23,7 +20,6 @@ const Main = () => {
       <p className="text-center font-satisfy text-lg font-bold text-black md:text-xl lg:text-3xl">
         We're Not Only A Market....
       </p>
-
       <p className="text-center font-satisfy text-sm text-black md:text-xl lg:text-3xl">
         We cater to all your needs, especially
         <br />
@@ -42,23 +38,24 @@ const Main = () => {
         <br />
       </p>
       <br />
-
-      <div className="container flex flex-col items-center md:flex-row">
-        <img
-          className="mx-auto mb-2 flex-col md:flex md:flex-row"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSBV4_rqdSOp8nVPxC-XsU8MqaMJth5Pbi5w&usqp=CAU"
-          alt="sunset-beach"
-        />
-        <img
-          className="mx-auto mb-2 flex flex-col items-center md:flex md:flex-row"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxTgXFe3sILxoAr5hf1ZRyXFs16UhtDDp1fQ&usqp=CAU"
-          alt="sunset-beach"
-        />
-        <img
-          className="mx-auto flex flex-col items-center overflow-hidden md:flex-row"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxTgXFe3sILxoAr5hf1ZRyXFs16UhtDDp1fQ&usqp=CAU"
-          alt="sunset-beach"
-        />
+      <div className="container flex flex-col items-center justify-center md:flex-row lg:flex-row">
+        <div className="flex justify-center">
+          <img
+            className="m-2 h-64 w-64"
+            src="./src/assets/blackpoint7.jpeg"
+            alt="sunset-beach"
+          />
+          <img
+            className="m-2 h-64 w-64"
+            src="./src/assets/blackpoint13.jpeg"
+            alt="sunset-beach"
+          />
+          <img
+            className="m-2 h-64 w-64"
+            src="./src/assets/blackpoint5.jpeg"
+            alt="sunset-beach"
+          />
+        </div>
       </div>
       <br />
       <div className="text-center text-sm text-slate-900 md:text-lg lg:text-2xl">

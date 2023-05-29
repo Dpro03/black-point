@@ -62,14 +62,16 @@ const Offerings = () => {
   ];
 
   return (
-    <m.div initial={{ opacity: 0, scale: 0.7 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.75, ease: 'easeInOut' }}
-    exit={{ opacity: 0 }}
-    className="h-full w-full bg-gradient-to-r from-indigo-500 to-red-700 text-slate-100">
+    <m.div
+      initial={{ opacity: 0, scale: 0.7 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.75, ease: 'easeInOut' }}
+      exit={{ opacity: 0 }}
+      className="h-full w-full bg-gradient-to-r from-cyan-400 to-sky-600 text-white"
+    >
       <div className="container mx-auto px-4 py-8 pb-24">
         <br />
-        <h1 className="mb-8 text-center text-4xl font-bold underline decoration-yellow-300 underline-offset-8">
+        <h1 className="mb-8 text-center text-4xl font-bold text-black underline decoration-rose-700 underline-offset-8">
           Black Point Offerings!
         </h1>
         <br />
@@ -77,7 +79,7 @@ const Offerings = () => {
           {offerings.map((offering) => (
             <div
               key={offering.id}
-              className="border-shadow-md transform overflow-hidden rounded-2xl bg-lime-600 p-6 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-orange-400 hover:shadow-xl hover:shadow-rose-800"
+              className="border-shadow-md transform overflow-hidden rounded-2xl bg-rose-500 p-6 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-rose-700 hover:shadow-xl hover:shadow-rose-800"
             >
               <img
                 className="h-52 w-full object-cover"
@@ -86,9 +88,7 @@ const Offerings = () => {
               />
               <div className="p-4">
                 <h2 className="mb-2 text-2xl font-bold">{offering.name}</h2>
-                <p className="text-base text-gray-700">
-                  {offering.description}
-                </p>
+                <p className="text-base text-black">{offering.description}</p>
                 <p className="mt-2 text-xl font-bold">
                   ${offering.price.toFixed(2)}
                 </p>

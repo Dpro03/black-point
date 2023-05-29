@@ -4,11 +4,13 @@ import { motion as m } from 'framer-motion';
 const Welcome = () => {
   return (
     <>
-      <m.div initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.75, ease: 'easeInOut' }}
-      exit={{ opacity: 0 }}
-      className="h-full w-full bg-gradient-to-r from-blue-500 to-rose-600 text-amber-300">
+      <m.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.75, ease: 'easeInOut' }}
+        exit={{ opacity: 0 }}
+        className="h-full w-full bg-gradient-to-r from-blue-500 to-rose-600 text-amber-300"
+      >
         <div className="text-center">
           <br />
           <br />
@@ -80,28 +82,23 @@ const Welcome = () => {
           <br />
           <br />
         </div>
-        <div className="flex justify-center">
-          <div className="flex w-full flex-col items-center justify-center pb-14 md:flex-row">
+        <div className="flex justify-center p-4">
+          <div className="flex w-full flex-col items-center justify-center pb-4 md:flex-row">
             <img
-              className="mx-auto mb-9 mt-9 h-auto w-1/4 sm:w-1/2"
+              className="mx-auto mb-4 mt-4 h-auto w-1/4 sm:w-1/2 lg:pr-4"
               src="https://www.blackpointmarket.com/x/cdn/?https://storage.googleapis.com/production-homestead-v1-0-5/365/255365/boc7Ij2Y/6d13bd3400bb4b44bae308879231479d"
               alt="Hello"
             />
             <img
-              className="mx-auto mb-9 mt-9 h-auto w-1/4 sm:w-1/2"
+              className="mx-auto mb-4 mt-4 h-auto w-1/4 sm:w-1/2 lg:pr-4"
               src="https://www.blackpointmarket.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-31632971/images/5cc8b0fd30148ObPppB5/Richies-Italian-Ice_d400.jpg"
               alt="Hello"
             />
             <img
-              className="mx-auto mb-9 mt-9 h-auto w-1/4 sm:w-1/2"
+              className="mx-auto mb-4 mt-4 h-auto w-1/4 sm:w-1/2"
               src="https://www.blackpointmarket.com/x/cdn/?https://storage.googleapis.com/production-homestead-v1-0-5/365/255365/boc7Ij2Y/2fd521da6c114bda80ed05cb08c54a72"
               alt="Hello"
             />
-            {/* <img
-            className="mt-9 mb-9 mx-auto w-1/4 sm:w-1/2 h-auto"
-            src="https://www.blackpointmarket.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-31632971/images/5cbb5df431edeOU6Un4j/coffee-bar-ready1_d400.jpg"
-            alt="Hello"
-          /> */}
           </div>
         </div>
       </m.div>

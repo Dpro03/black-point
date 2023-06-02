@@ -8,7 +8,7 @@ const Main = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.75, ease: 'easeInOut' }}
       exit={{ opacity: 0 }}
-      className="h-screen w-full bg-gradient-to-r from-orange-500 to-rose-700 text-slate-300"
+      className="h-full w-full bg-gradient-to-r from-orange-500 to-rose-700 text-slate-300"
     >
       <br />
       <br />
@@ -17,7 +17,7 @@ const Main = () => {
       </h1>
       <br />
       <br />
-      <p className="text-center font-satisfy text-lg font-bold text-black md:text-xl lg:text-3xl">
+      <p className="text-center font-satisfy text-lg font-bold text-white md:text-xl lg:text-3xl">
         We're Not Only A Market....
       </p>
       <p className="text-center font-satisfy text-sm text-black md:text-xl lg:text-3xl">
@@ -38,8 +38,8 @@ const Main = () => {
         <br />
       </p>
       <br />
-      <div className="container flex flex-col items-center justify-center md:flex-row lg:flex-row">
-        <div className="flex justify-center">
+      <div className="flex flex-col items-center justify-center sm:flex-col md:flex-row lg:flex-row">
+        <div className="flex flex-wrap justify-center">
           <img
             className="m-2 h-64 w-64"
             src="./src/assets/blackpoint7.jpeg"
@@ -47,7 +47,7 @@ const Main = () => {
           />
           <img
             className="m-2 h-64 w-64"
-            src="./src/assets/blackpoint13.jpeg"
+            src="./src/assets/blackpoint9.jpeg"
             alt="sunset-beach"
           />
           <img

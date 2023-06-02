@@ -72,8 +72,25 @@ const Offerings = () => {
       <div className="container mx-auto px-4 py-8 pb-24">
         <br />
         <h1 className="mb-8 text-center text-4xl font-bold text-black underline decoration-rose-700 underline-offset-8">
-          Black Point Offerings!
+          Black Point Menu!
         </h1>
+        <p className="pb-6 text-center text-xl text-black">
+          Check below menu for more offers!
+        </p>
+        <img
+          src={'./src/assets/blackpointmenu2.png'}
+          alt="Menu Picture"
+          style={{ width: '100%' }}
+        />
+        <img
+          src={'./src/assets/blackpointmenu2.png'}
+          alt="Menu Picture"
+          style={{ width: '100%' }}
+        />
+
+        <h2 className="mt-3 text-center text-2xl font-bold text-rose-900">
+          Featured Offerings
+        </h2>
         <br />
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {offerings.map((offering) => (

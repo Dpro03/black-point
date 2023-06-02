@@ -8,7 +8,7 @@ const Contact = () => {
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.75, ease: 'easeInOut' }}
       exit={{ opacity: 0 }}
-      className="flex min-h-screen flex-col items-center justify-center bg-zinc-600"
+      className="flex min-h-screen flex-col items-center justify-center bg-cyan-500"
     >
       <h1 className="mb-6 text-xl text-rose-500 underline decoration-yellow-300 underline-offset-8 md:text-3xl lg:text-5xl">
         Contact Us!
@@ -38,13 +38,13 @@ const Contact = () => {
         <p className="text-lg md:text-xl lg:text-2xl">
           <u className="text-yellow-300">Our Likes/Dislikes:</u>
           <br />
-          <u className="text-pink-600">Hers:</u>
+          <u className="text-rose-500">Hers:</u>
           <br />
           1.) Men in Black
           <br />
           2.) Long Sleeve T-Shirts
           <br />
-          <u className='text-blue-500'>His:</u>
+          <u className="text-blue-700">His:</u>
           <br />
           1.) X-L Anything!
           <br />

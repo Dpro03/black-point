@@ -11,7 +11,7 @@ const Photos = () => {
       className="flex min-h-screen w-full flex-col bg-gradient-to-r from-red-600 to-amber-500 text-indigo-800"
     >
       <div className="container mx-auto flex-grow items-center">
-        <h1 className="mb-4 text-center text-4xl font-bold tracking-widest text-slate-800">
+        <h1 className="mb-4 mt-4 text-center text-4xl font-bold tracking-widest text-slate-800">
           🌺Photos🌺
         </h1>
         <div className="flex justify-center">
@@ -85,6 +85,11 @@ const Photos = () => {
               className="h-70 w-70 rounded-xl"
               src="./src/assets/blackpoint14.jpeg"
               alt="Photo 14"
+            />
+            <img
+              className="h-70 w-70 rounded-xl"
+              src="./src/assets/blackpoint15.jpeg"
+              alt="Photo 15"
             />
           </div>
         </div>

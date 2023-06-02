@@ -8,7 +8,7 @@ const History = () => {
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.75, ease: 'easeInOut' }}
       exit={{ opacity: 0 }}
-      className="min-h-screen bg-gradient-to-r from-rose-600 to-rose-300 text-zinc-800"
+      className="min-h-screen bg-gradient-to-r from-rose-300 to-rose-500 text-zinc-800"
     >
       <nav className="bg-gray-800 px-6 py-4 text-center font-satisfy text-xl text-white md:text-2xl lg:text-4xl">
         The History of the Black Point Market

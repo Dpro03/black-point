@@ -76,14 +76,14 @@ const Welcome = () => {
             <br />
             and use the above menu buttons to browse
             <br />
-            our website! 
+            our website!
           </h1>
           <br />
           <br />
           <br />
         </div>
         <div className="flex justify-center px-4">
-          <div className="mx-auto flex w-full max-w-5xl items-center justify-center pb-20 md:flex-row">
+          <div className="mx-auto flex w-full max-w-5xl flex-col items-center justify-center pb-20 md:flex-col lg:flex-row">
             <img
               className="mx-auto mb-4 mt-4 h-auto w-1/4 sm:w-1/2 lg:pr-4"
               src="./src/assets/blackpoint3.jpeg"

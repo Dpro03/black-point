@@ -9,13 +9,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`relative z-10 h-40 rounded border border-rose-400 bg-gradient-to-r from-rose-600 to-rose-400 py-4 pt-8 ${
-        isMenuOpen ? 'flex items-center justify-center' : ''
-      }`}
+      className={`relative z-10 h-40 rounded border border-rose-400 bg-gradient-to-r from-rose-600 to-rose-400 py-4 pt-8 
+      ${isMenuOpen ? 'flex items-center justify-center' : ''}`}
       style={{
         backgroundImage:
-          "url('https://media.istockphoto.com/id/186840575/photo/blue-ocean-view-panorama.jpg?s=612x612&w=0&k=20&c=oXw8xIsLNTc1_HOKTEpi5rgGIa034KBw859qIuRqfv4=')",
+          // "url('https://media.istockphoto.com/id/186840575/photo/blue-ocean-view-panorama.jpg?s=612x612&w=0&k=20&c=oXw8xIsLNTc1_HOKTEpi5rgGIa034KBw859qIuRqfv4=')",
+          "url('./src/assets/blackpointheader.jpg')",
         backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
       }}
     >
@@ -27,10 +28,10 @@ const Navbar = () => {
           <a
             href="/"
             className="inline-flex items-center gap-4 overflow-hidden opacity-100"
-            style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.1)' }}
+            style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}
           >
             <span className="mr-4 text-5xl">⚓️</span>
-            <span>Black Point Market</span>
+            <h2>Black Point Market</h2>
           </a>
         </div>
 

@@ -10,7 +10,7 @@ const Footer = () => {
             Like us on Facebook and Instagram! 👍
           </p>
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/profile.php?id=100063476351415&ref=settings"
             target="_blank"
             rel="noopener noreferrer"
             className="mr-4 text-xl text-white md:text-2xl"

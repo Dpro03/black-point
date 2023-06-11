@@ -4,18 +4,21 @@ import { motion as m } from 'framer-motion';
 const Contact = () => {
   return (
     <m.div
-      initial={{ opacity: 0, x: '-100vw' }}
-      animate={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, y: '-100vh' }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, ease: 'easeInOut' }}
       exit={{ opacity: 0 }}
-      className="flex min-h-screen flex-col items-center justify-center bg-orange-600"
+      className="flex min-h-screen flex-col items-center justify-start bg-gradient-to-b from-orange-700 to-orange-500 py-12"
     >
-      <h1 className="mb-6 text-xl text-rose-800 underline decoration-yellow-300 underline-offset-8 md:text-3xl lg:text-5xl">
+      <h1 className="mb-4 mt-1 text-center text-2xl font-bold text-black underline decoration-pink-800 underline-offset-8 md:text-3xl lg:text-5xl">
         Contact Us!
       </h1>
-      <div className="text-center">
+      <br />
+      <br />
+      <div className="mt-6 text-center">
         <p className="text-lg md:text-xl lg:text-2xl">
-          <u>Our Address:</u>
+          <u>Address:</u>
+          <br />
         </p>
         <p className="text-lg md:text-xl lg:text-2xl">
           Black Point Market
@@ -26,37 +29,19 @@ const Contact = () => {
         </p>
         <br />
         <p className="text-lg md:text-xl lg:text-2xl">
-          <u>Our email:</u>
+          <u>email:</u>
           <br />
-          <a href="mailto:test@test.net">I actually don't know if we have one.</a>
+          <a href="mailto:info@blackpointmarket.com">
+            info@blackpointmarket.com
+          </a>
         </p>
         <br />
         <p className="text-lg md:text-xl lg:text-2xl">
-          <u>Our Phone:</u>
+          <u>Telephone:</u>
           <br />
-          <a href="tel:(321) 555-5555">(123) do-not-call</a>
+
+          <a href="tel:(860) 451-8028">(860) 451-8028</a>
         </p>
-        <br />
-        <p className="text-lg md:text-xl lg:text-2xl">
-          <u className="text-indigo-800">Our Likes/Dislikes:</u>
-          <br />
-          <u className="text-rose-700">Hers:</u>
-          <br />
-          1.) Men in Black
-          <br />
-          2.) Long Sleeve T-Shirts
-          <br />
-          <u className="text-blue-800">His:</u>
-          <br />
-          1.) X-L Anything!
-          <br />
-          2.) Guys who shotgun Bud Light🫦
-        </p>
-        <img
-          className="mx-auto my-4 h-auto w-60 pb-20 md:w-60"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOvqyEw4VXe8ML-ordKHRxbdO1gljgurHmbg&usqp=CAU"
-          alt="girlandicecream"
-        />
       </div>
     </m.div>
   );

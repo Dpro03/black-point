@@ -67,7 +67,7 @@ const Offerings = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.75, ease: 'easeInOut' }}
       exit={{ opacity: 0 }}
-      className="h-full w-full bg-gradient-to-r from-red-600 via-red-400 to-cyan-400 to-sky-400 text-white"
+      className="h-full w-full bg-gradient-to-r from-rose-600 via-indigo-600 to-cyan-400 to-sky-400 text-white"
     >
       <div className="container mx-auto px-4 py-8 pb-24">
         <br />

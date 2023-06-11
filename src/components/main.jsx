@@ -20,21 +20,39 @@ const Main = () => {
       <p className="text-center font-satisfy text-lg font-bold text-white md:text-xl lg:text-3xl">
         We're Not Only A Market....
       </p>
-      <p className="text-center font-satisfy text-sm text-black md:text-xl lg:text-3xl">
-        We cater to all your needs, especially
-        <br />
-        if you have to spend your time catering to
-        <br />
-        crazy family members, or are too tired after
-        <br />
-        the beach and possibly too rich and/or
-        <br />
-        lazy to save a few bucks and drive the
-        <br />
-        short distance to town! 🤣🤣
+      <p className="mx-auto max-w-6xl p-4 text-center text-sm text-black md:text-xl lg:text-3xl">
+        Welcome to Black Point Market, your go-to destination for all things
+        delightful in the heart of our beachside community. Nestled by our
+        beautiful shore, we are proud to bring you a unique blend of flavors and
+        experiences. At Black Point Market, we offer a mouthwatering selection
+        of premium ice cream, a sizzling grill, and a curated collection of
+        sundries to cater to the diverse tastes and needs of our amazing beach
+        residents. Indulge your senses with our creamy and delicious ice cream
+        made with the finest ingredients. From classic favorites like chocolate
+        and vanilla to inventive creations like sea salt caramel and tropical
+        fruit medleys, our ice cream parlor is a haven for those seeking the
+        perfect scoop to satisfy their cravings. But that's not all - our grill
+        is a haven for food enthusiasts looking for a hearty and satisfying
+        meal. From juicy burgers and perfectly grilled cheesesteaks to
+        refreshing salads and flavorful vegetarian options, our menu is designed
+        to tantalize your taste buds while embracing the laid-back beach vibe.
+        In addition to our culinary offerings, we also take pride in our
+        selection of t-shirts, candy bars, chips and more. We provide beach
+        essentials and local goods to enhance your beach-going experience. From
+        sunscreen and beach toys to locally sourced products and souvenirs, we
+        have everything you need to make your time by the shore even more
+        enjoyable. Black Point Market is more than just a place to eat and shop;
+        it IS a community hub, a place where neighbors gather, friends connect,
+        and memories are made. Whether you're a local resident or a visitor
+        passing through, we invite you to immerse yourself in the warm and
+        inviting atmosphere, soak up the beach vibes, and indulge in the flavors
+        that define our coastal haven. Join us at Black Point Market and let us
+        be your destination for scrumptious treats, savory delights, and the
+        essence of beach life. We look forward to serving you with a smile and
+        creating memorable experiences along the way.{' '}
       </p>
       <p className="text-center text-sm text-stone-950 underline decoration-stone-800 md:text-xl lg:text-3xl">
-        You're gonna LOVE it here!
+        You will LOVE it here!
         <br />
       </p>
       <br />

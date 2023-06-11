@@ -37,7 +37,7 @@ const Navbar = () => {
 
         <div className="block md:hidden">
           <button
-            className="ml-2.5 flex items-center rounded border-2 border-gray-900 px-3 py-3 text-slate-600 hover:border-rose-300 hover:text-pink-600"
+            className="ml-2.5 flex items-center rounded border-2 border-gray-900 px-3 py-3 text-slate-600 hover:border-rose-500 hover:text-pink-600"
             type="button"
             onClick={toggleMenu}
           >
@@ -147,8 +147,6 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Offerings
-              <span className="ml-10">🍦</span>
-              <span className="ml-4">🍔</span>
             </a>
           </li>
           <li>
@@ -157,7 +155,7 @@ const Navbar = () => {
               href="/history"
               onClick={toggleMenu}
             >
-              Our Story<span className="ml-9">💤</span>
+              Our Story
             </a>
           </li>
 

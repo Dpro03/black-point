@@ -9,7 +9,7 @@ const Welcome = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.75, ease: 'easeInOut' }}
         exit={{ opacity: 0 }}
-        className="h-full w-full bg-gradient-to-r from-blue-500 to-rose-600 text-amber-300"
+        className="h-full w-full bg-gradient-to-r from-rose-600 to-orange-500 text-slate-900"
       >
         <div className="text-center">
           <br />
@@ -19,25 +19,14 @@ const Welcome = () => {
             Welcome to the Black Point Market!
           </h1>
           <p className="lg:text-2xlflex flex-col text-sm text-slate-50 md:text-xl">
-            How we have changed through the years. Check <br></br> out how this
+            How we have changed through the years. Check <br></br> out how our
             building has evolved...
-          </p>
-          <br />
-          <p className="lg:text-2xlflex flex-col text-sm text-slate-50 md:text-xl">
-            I am trying to find some filler cause<br></br> I do not know what to
-            write!
-          </p>
-          <br />
-          <p className="lg:text-2xlflex flex-col text-sm text-slate-50 md:text-xl">
-            Wow - that 70's style is so groovy! Love that awesome trash barrel.
-            <br />
-            Classin' it up, Niantic Style!🥸🥕
           </p>
         </div>
         <div className="flex flex-col md:flex-row md:space-x-4">
           <div className="flex w-full flex-col items-center justify-center p-10 md:w-1/3">
             <img
-              src="https://www.blackpointmarket.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-31632971/images/5a64c6c1674216uzk6gC/Market_1928_d600.jpg"
+              src="./src/assets/blackpoint1928.jpeg"
               alt="Black Point Market-1928"
               className="h-96 w-full"
             />
@@ -45,7 +34,7 @@ const Welcome = () => {
           </div>
           <div className="flex w-full flex-col items-center justify-center p-10 md:w-1/3">
             <img
-              src="https://www.blackpointmarket.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-31632971/images/5a64c700d0142MqMaAG4/Black-Point-Market---July-1974_d400.jpg"
+              src="./src/assets/blackpoint1975.jpeg"
               alt="Black Point Market-1975"
               className="h-96 w-full"
             />
@@ -53,7 +42,7 @@ const Welcome = () => {
           </div>
           <div className="flex w-full flex-col items-center justify-center p-10 md:w-1/3">
             <img
-              src="https://www.blackpointmarket.com/x/cdn/?https://storage.googleapis.com/production-homestead-v1-0-5/365/255365/boc7Ij2Y/2779bdd69fca4de593b122ef54dee392"
+              src="./src/assets/blackpoint2022.jpeg"
               alt="Black Point Market-2022"
               className="h-96 w-full"
             />
@@ -66,17 +55,21 @@ const Welcome = () => {
           <h1 className="lg:text-2xlflex flex-col text-sm font-bold md:text-xl">
             Hello! Welcome to Black Point Market.
             <br />
-            We are getting ready to reopen for the season
+            We are open for the season under
             <br />
-            under new ownership and we cannot wait
+            new ownership, but we are dedicated
             <br />
-            to show you what we have to offer you awesome
+            to keeping the market's past goodness
             <br />
-            individuals this year! Feel free to look around
+            alive and we cannot wait to show
             <br />
-            and use the above menu buttons to browse
+            you what we have to offer you
             <br />
-            our website!
+            this year! Feel free to look around
+            <br />
+            and use the above menu buttons to
+            <br />
+            browse our website!
           </h1>
           <br />
           <br />

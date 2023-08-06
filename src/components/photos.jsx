@@ -1,7 +1,56 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion as m } from 'framer-motion';
 
 const Photos = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const handleKeyDown = (event) => {
+    if (event.keyCode === 37) {
+      // Left Arrow Key
+      setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? 0 : prevIndex - 1));
+    } else if (event.keyCode === 39) {
+      // Right Arrow Key
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === totalImages - 1 ? prevIndex : prevIndex + 1
+      );
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [currentImageIndex]);
+
+  const images = [
+    './src/assets/blackpoint1.jpeg',
+    './src/assets/blackpoint2.jpeg',
+    './src/assets/blackpoint3.jpeg',
+    './src/assets/blackpoint4.jpeg',
+    './src/assets/blackpoint5.jpeg',
+    './src/assets/blackpoint6.jpeg',
+    './src/assets/blackpoint7.jpeg',
+    './src/assets/blackpoint8.jpeg',
+    './src/assets/blackpoint9.jpeg',
+    './src/assets/blackpoint10.jpeg',
+    './src/assets/blackpoint11.jpeg',
+    './src/assets/blackpoint12.jpeg',
+    './src/assets/blackpoint13.jpeg',
+    './src/assets/blackpoint14.jpeg',
+    './src/assets/blackpoint15.jpeg',
+  ];
+
+  const totalImages = images.length;
+
+  const handlePrevClick = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? 0 : prevIndex - 1));
+  };
+
+  const handleNextClick = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === totalImages - 1 ? prevIndex : prevIndex + 1
+    );
+  };
+
   return (
     <m.div
       initial={{ opacity: 0, scale: 0.5 }}
@@ -14,173 +63,36 @@ const Photos = () => {
         <h1 className="mb-4 mt-4 text-center text-4xl font-bold tracking-widest text-slate-800">
           Photos
         </h1>
-        <div className="flex justify-center">
+        <div className="flex justify-center relative">
+          <button
+            className="arrow-button left-arrow"
+            onClick={handlePrevClick}
+          >
+            &lt;
+          </button>
+          <button
+            className="arrow-button right-arrow"
+            onClick={handleNextClick}
+          >
+            &gt;
+          </button>
           <div className="mb-24 grid grid-cols-1 gap-6 p-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            <a
-              href="./src/assets/blackpoint1.jpeg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="rounded-2xl"
-                src="./src/assets/blackpoint1.jpeg"
-                alt="Photo 1"
-              />
-            </a>
-            <a
-              href="./src/assets/blackpoint2.jpeg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="rounded-2xl"
-                src="./src/assets/blackpoint2.jpeg"
-                alt="Photo 2"
-              />
-            </a>
-            <a
-              href="./src/assets/blackpoint3.jpeg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="rounded-2xl"
-                src="./src/assets/blackpoint3.jpeg"
-                alt="Photo 3"
-              />
-            </a>
-            <a
-              href="./src/assets/blackpoint4.jpeg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="rounded-2xl"
-                src="./src/assets/blackpoint4.jpeg"
-                alt="Photo 4"
-              />
-            </a>
-            <a
-              href="./src/assets/blackpoint5.jpeg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="rounded-2xl"
-                src="./src/assets/blackpoint5.jpeg"
-                alt="Photo 5"
-              />
-            </a>
-            <a
-              href="./src/assets/blackpoint6.jpeg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="rounded-2xl"
-                src="./src/assets/blackpoint6.jpeg"
-                alt="Photo 6"
-              />
-            </a>
-            <a
-              href="./src/assets/blackpoint7.jpeg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="rounded-2xl"
-                src="./src/assets/blackpoint7.jpeg"
-                alt="Photo 7"
-              />
-            </a>
-            <a
-              href="./src/assets/blackpoint8.jpeg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="rounded-2xl"
-                src="./src/assets/blackpoint8.jpeg"
-                alt="Photo 8"
-              />
-            </a>
-            <a
-              href="./src/assets/blackpoint9.jpeg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="rounded-2xl"
-                src="./src/assets/blackpoint9.jpeg"
-                alt="Photo 9"
-              />
-            </a>
-            <a
-              href="./src/assets/blackpoint10.jpeg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="rounded-2xl"
-                src="./src/assets/blackpoint10.jpeg"
-                alt="Photo 10"
-              />
-            </a>
-            <a
-              href="./src/assets/blackpoint11.jpeg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="rounded-2xl"
-                src="./src/assets/blackpoint11.jpeg"
-                alt="Photo 11"
-              />
-            </a>
-            <a
-              href="./src/assets/blackpoint12.jpeg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="rounded-2xl"
-                src="./src/assets/blackpoint12.jpeg"
-                alt="Photo 12"
-              />
-            </a>
-            <a
-              href="./src/assets/blackpoint13.jpeg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="rounded-2xl"
-                src="./src/assets/blackpoint13.jpeg"
-                alt="Photo 13"
-              />
-            </a>
-            <a
-              href="./src/assets/blackpoint14.jpeg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="rounded-2xl"
-                src="./src/assets/blackpoint14.jpeg"
-                alt="Photo 14"
-              />
-            </a>
-            <a
-              href="./src/assets/blackpoint15.jpeg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="rounded-2xl"
-                src="./src/assets/blackpoint15.jpeg"
-                alt="Photo 15"
-              />
-            </a>
+            {images.map((image, index) => (
+              <a
+                key={index}
+                href={image}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className={`rounded-2xl ${
+                    index === currentImageIndex ? 'border-4 border-blue-500' : ''
+                  }`}
+                  src={image}
+                  alt={`Photo ${index + 1}`}
+                />
+              </a>
+            ))}
           </div>
         </div>
       </div>
